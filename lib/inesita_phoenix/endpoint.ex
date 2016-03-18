@@ -9,7 +9,7 @@ defmodule InesitaPhoenix.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/", from: :inesita_phoenix, gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt index.html application.js stylesheet.css)
+    only: ~w(static favicon.ico robots.txt index.html application.js stylesheet.css)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

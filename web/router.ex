@@ -16,7 +16,7 @@ defmodule InesitaPhoenix.Router do
   scope "/", InesitaPhoenix do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/*any", PageController, :index
   end
 
   # Other scopes may use custom stacks.
