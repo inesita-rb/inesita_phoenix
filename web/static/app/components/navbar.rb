@@ -6,7 +6,7 @@ class NavBar
       div class: 'container' do
         div class: 'navbar-header' do
           span class: 'navbar-brand' do
-            text 'app'
+            text 'InesitaPhoenix'
           end
           ul class: 'nav navbar-nav' do
             li class: "#{"active" if router.current_url?(:home)}" do
