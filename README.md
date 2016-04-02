@@ -4,6 +4,7 @@ Sample [Phoenix](https://github.com/phoenixframework/phoenix) application with [
 
 To start your Phoenix app:
 
+  * Install ruby dependencies with `bundle install`
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Inesita dependencies with `bundle install`
