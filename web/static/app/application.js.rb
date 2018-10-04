@@ -1,20 +1,23 @@
-# require Inesita
 require 'inesita'
+require 'inesita-router'
 
-# require main parts of application
-require 'router'
 require 'store'
-require 'layout'
-
-# require all components
 require_tree './components'
+require 'router'
 
-# when document is ready render application to <body>
-$document.ready do
-  # setup Inesita application
-  Inesita::Application.new(
-    router: Router,
-    store: Store,
-    layout: Layout
-  ).mount_to($document.body)
+class Application
+  include Inesita::Component
+
+  inject Store
+
+  def render
+    div class: 'container' do
+      component NavBar
+      component Router
+    end
+  end
+end
+
+Inesita::Browser.ready? do
+  Application.mount_to(Inesita::Browser.body)
 end

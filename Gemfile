@@ -1,12 +1,15 @@
 source "https://rubygems.org"
 
 # inesita gem
-gem 'inesita', '~> 0.3.0'
-gem 'opal-phoenix', '~> 0.0.0'
+gem 'inesita'
+gem 'inesita-router'
 
-# add this gems to minify files on build
-#
-# gem 'uglifier'
-# gem 'htmlcompressor'
-#
+gem 'opal-phoenix'
+
+gem 'slim'
+gem 'sass'
+
+gem 'uglifier'
+gem 'htmlcompressor'
+
 gem 'bootstrap-sass'
