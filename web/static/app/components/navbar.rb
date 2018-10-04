@@ -11,12 +11,12 @@ class NavBar
           ul class: 'nav navbar-nav' do
             li class: "#{"active" if router.current_url?(:home)}" do
               a href: router.url_for(:home) do
-                text 'Home'
+                'Home'
               end
             end
             li class: "#{"active" if router.current_url?(:description)}" do
               a href: router.url_for(:description) do
-                text 'Description'
+                'Description'
               end
             end
           end
